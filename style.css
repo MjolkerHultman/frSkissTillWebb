@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    text-decoration: none;
+}
+
+/*Variables*/
+:root{
+    --margin: 1.5rem;
+    --primaryBgColour: black;
+}
+
+/*Topbar*/
+header{
+    width: 100vw;
+    height: 12vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbarLogo{
+    padding-left: var(--margin);
+    width: 10vw;
+}
+header nav{
+    padding-right: var(--margin);
+
+    display: flex;
+    gap: var(--margin);
+}
+header nav a{
+    
+}
+
+/*Hero*/
+.heroImage{
+    width: 60vw;
+}
+
+.heroImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero div{
+    width: 40vw;
+}
+
