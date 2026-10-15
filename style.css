@@ -7,7 +7,7 @@
 
 /*Variables*/
 :root{
-    --margin: 1.5rem;
+    --spacing: 2.5rem;
     --primaryBgColour: black;
 }
 
@@ -21,20 +21,23 @@ header{
     align-items: center;
 }
 .topbarLogo{
-    padding-left: var(--margin);
+    padding-left: var(--spacing);
     width: 10vw;
 }
 header nav{
-    padding-right: var(--margin);
+    padding-right: var(--spacing);
 
     display: flex;
-    gap: var(--margin);
+    gap: var(--spacing);
 }
 header nav a{
     
 }
 
 /*Hero*/
+.hero{
+    display: flex;
+}
 .heroImage{
     width: 60vw;
 }
@@ -45,6 +48,35 @@ header nav a{
     object-fit: cover;
 }
 .hero div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     width: 40vw;
 }
+.info{
+    display: flex;
+    flex-direction: column; 
+    
+    padding-left: var(--spacing);  
+}
+.buttons{
+    display: flex;
 
+    padding-right: var(--spacing);
+}
+.buttons div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 0;
+    height: 8vh;
+    width: 20vw;
+}
+.purple{
+    background-color: blueviolet;
+}
+.purple p{
+    color: white;
+}
