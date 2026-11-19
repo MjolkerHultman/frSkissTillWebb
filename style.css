@@ -8,7 +8,14 @@
 /*Variables*/
 :root{
     --spacing: 2.5rem;
-    --primaryBgColour: black;
+    --primaryBgColour: #211612;
+    --primaryLColour: #f4f3ef;
+    --purple: #8565d6;
+}
+
+/*Universal*/
+body{
+    /*background-color: var(--primaryBgColour);*/
 }
 
 /*Topbar*/
@@ -30,9 +37,7 @@ header nav{
     display: flex;
     gap: var(--spacing);
 }
-header nav a{
-    
-}
+
 
 /*Hero*/
 .hero{
@@ -58,7 +63,8 @@ header nav a{
     display: flex;
     flex-direction: column; 
     
-    padding-left: var(--spacing);  
+    padding-left: var(--spacing);
+    background-color: var(--primaryLColour);
 }
 .buttons{
     display: flex;
@@ -75,8 +81,8 @@ header nav a{
     width: 20vw;
 }
 .purple{
-    background-color: blueviolet;
+    background-color: var(--purple);
 }
 .purple p{
-    color: white;
+    color: var(--primaryLColour);
 }
